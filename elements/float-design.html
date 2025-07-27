@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float page</title>
+    <style>
+        .ultimateDiv{
+        }
+        .superDivAB{
+            width: 100%;
+        }
+        .superDivCD{
+            width: 25%;
+            float: left;
+        }
+        .superDivGH{
+            width: 50%;
+            float: left;
+        }
+        .superDivCDE{
+            width: 100%;
+        }
+        .mainDiv1{
+            width: 55.55%;
+            float: left;
+        }
+        .mainDiv2{
+            width: 44.44%;
+            
+            float: left;
+        }
+        .divA{
+            box-sizing: border-box;
+            height: 200px;
+            width: 40%;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            float: left;
+        }
+        .divB{
+            box-sizing: border-box;
+            height: 200px;
+            width: 60%;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            float: left;
+        }
+        .divCD{
+            box-sizing: border-box;
+            height: 100px;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            
+        }
+        
+        .divE{
+            box-sizing: border-box;
+            height: 200px;
+            width: 75%;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            float: left;
+        }
+        .divF{
+            box-sizing: border-box;
+            height: 400px;
+            width: 50%;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            float: left;
+        }
+        .divG{
+            box-sizing: border-box;
+            height: 300px;
+            width: 100%;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+        }
+        .divH{
+            box-sizing: border-box;
+            height: 100px;
+            width: 100%;
+            background-color: rgb(179, 179, 179);
+            padding: 8px;
+            border: 4px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="mainDiv1 clearfix">
+            <div class="superDivAB clearfix">
+                <div class="divA">
+                    A
+                </div>
+                <div class="divB">
+                    B
+                </div>
+            </div>
+            <div class="superDivCDE clearfix">
+                <div class="superDivCD">
+                    <div class="divCD">
+                        C
+                    </div>
+                    <div class="divCD">
+                        D
+                    </div>
+                </div>
+                <div class="divE">
+                    E
+                </div>
+            </div>
+        </div>   
+        <div class="mainDiv2 clearfix">
+            <div class="divF">
+                F
+            </div>
+            <div class="superDivGH">
+                <div class="divG">
+                    G
+                </div>
+                <div class="divH">
+                    H
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

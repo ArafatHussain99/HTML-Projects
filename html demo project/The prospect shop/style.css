@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background-image: url("images/header_bg.png");
+    background-size: 100% 100%;
+    padding: 2% 14%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.header-right {
+    float: right;
+    text-align: right;
+}
+
+.tabs li {
+    list-style-type: none;
+    float: left;
+    padding: 0px 16px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tabs li:hover {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+}
+.body img{
+    width: 100%;
+}
+.body{
+    position: relative;
+}
+.body .body-large{
+    position: absolute;
+    top: 12%;
+    left: 14%;
+    font-size: 300%;
+}
+.body .body-footer{
+    position: absolute;
+    bottom: 4%;
+    left: 14%;
+}
+.body-text{
+    float: left;
+}
+.body-form{
+    position: absolute;
+    float: left;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    height: 100px;
+}
+

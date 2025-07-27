@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+.car{
+  height: 200px;
+}
+.absolute{
+  position:absolute;
+  top:50px;
+  left: 50px;
+}
+.relative{
+  position: relative;
+}
+</style>
+<script>
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragstartHandlerr(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+let currentDropped = null;
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+
+  // Clear existing content
+  ev.target.innerHTML = 'Drop here';
+
+  // Append the dragged element
+  const draggedElement = document.getElementById(data);
+  ev.target.innerHTML = ''; // clear again to avoid both text + dragged element
+  ev.target.appendChild(draggedElement);
+}
+
+
+</script>
+</head>
+<body>
+
+<h1>Drag and Drop API</h1>
+
+<p>Drag and drop the W3Schools header into the rectangle:</p>
+
+<div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+<br>
+
+
+<h1 id="h2" draggable="true" ondragstart="dragstartHandlerr(event)">W4Schools.com</h1>
+<div class="relative">
+  <img src="redcar.png" class="car">
+  <h1 id="h1" class="absolute" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</h1>
+</div>
+
+
+</body>
+</html>
+

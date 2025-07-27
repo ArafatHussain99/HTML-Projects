@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        h1{
+            position:absolute;
+            top: 250px;
+            left: 250px;
+            z-index: 5;
+        }
+        h2{
+            position:absolute;
+            top: 250px;
+            left: 250px;
+            z-index: 6;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="redcar.png">
+        <h1>Hello man!</h1>
+        <h2>Hello man!</h2>
+    </div>
+    
+</body>
+</html>

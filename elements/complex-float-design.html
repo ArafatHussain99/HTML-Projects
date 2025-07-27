@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic complex layout</title>
+    <style>
+        .header{
+            width: 25%;
+            height: 50px;
+            background-color: #101628;
+            color: white;
+            float: left;
+            text-align: center;
+            align-content: center;
+        }
+        .menu{
+            width: 75%;
+            height: 50px;
+            background-color: #ef3d50;
+            color: white;
+            float: left;
+            text-align: center;
+            align-content: center;
+        }
+        .hero{
+            height: 250px;
+            width: 100%;
+            background-color: #4d86c7;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        .main{
+            height: 150px;
+            width: 50%;
+            background-color: #24344c;
+            color: white;
+            text-align: center;
+            align-content: center;
+            float: left;
+        }
+        .blank{
+            height: 150px;
+            width: 25%;
+            background-color: white;
+            
+            text-align: center;
+            align-content: center;
+            float: left;
+        }
+        .image{
+            height: 75px;
+            background-color: #c0e4e6;
+            color: white;
+            text-align: center;
+            align-content: center;
+            
+        }
+        .extra{
+            height: 75px;
+            background-color: #4ebd97;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        .imageExtra{
+            width: 25%;
+            float: left;
+        }
+        .banner{
+            height: 75px;
+            width: 100%;
+            background-color: #ffd168;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        .banner2{
+            display: none;
+            background-color: #ffd168;
+        }
+        .menu2{
+            display: none;
+            background-color: #ef3d50;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+         @media screen and (max-width:700px) and (min-width:401px) {
+            .header{
+                width: 100%;
+            }
+
+            .menu{
+                display: none;
+            }
+            .main{
+                width: 75%;
+            }
+            .menu2{
+                display: block;
+                float: left;
+                height: 300px;
+                width: 25%;
+                background-color: tomato;
+                color: white;
+                float: left;
+                text-align: center;
+                align-content: center;
+            }
+            .blank{
+                display: none;
+            }
+            .banner{
+                width: 75%;
+                display: none;
+            }
+            .banner2{
+                display: block;
+                height: 75px;
+                width: 75%;
+                background-color: rgb(221, 188, 0);
+                color: white;
+                text-align: center;
+                align-content: center;
+            }
+            .imageExtra{
+                width: 75%;
+            }
+            .image{
+                float: left;
+                width: 50%;
+            }
+            .extra{
+                float: left;
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .header{
+                height: 50px;
+                width: 100%;
+            }
+            .menu{
+                height: 50px;
+                width: 100%;
+            }
+            .hero{
+                height: 100px;
+                width: 100%;
+            }
+            .main{
+                height: 100px;
+                width: 100%;
+            }
+            .blank{
+                height: 50px;
+                width: 100%;
+            }
+            .image{
+                height: 50px;
+                width: 100%;
+                
+            }
+            .extra{
+                height: 50px;
+                width: 100%;
+            }
+            .imageExtra{
+                width: 100%;
+            }
+            .banner{
+                height: 50px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="clearfix">
+            <div class="header">
+                Header
+            </div>
+            <div class="menu">
+                Menu
+            </div>
+        </div>
+        <div class="hero">
+            Hero
+        </div>
+        <div class="clearfix">
+            <div class="menu2">
+                Menu
+            </div>
+            <div class="clearfix">
+                <div class="main">
+                    Main
+                </div>
+                <div class="clearfix">
+                    <div class="blank">
+                        Blank
+                    </div>
+                    <div class="clearfix">
+                        <div class="banner2">
+                            Banner
+                        </div>
+                        <div class="imageExtra">
+                            <div class="image">
+                                Image
+                            </div>
+                            <div class="extra">
+                                Extra
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="banner">
+                Banner
+            </div>
+        </div>
+    </div>
+</body>
+</html>

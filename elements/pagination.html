@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .center{
+            text-align: center;
+        }
+        .pagination{
+            display: inline-block;
+            
+        }
+        .pagination a{
+            color:black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .5s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+            font-size: 22px;
+            
+        }
+        .pagination a:hover{
+            background-color: red;
+            color: white;
+        }
+        .pagination a:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .pagination a:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .column{
+            column-count: 4;
+            column-gap: 40px;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: lightblue;
+            padding: 16px 0px;
+        }
+        @media screen and (max-width: 700px) {
+            .column{
+                column-count: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Pagination</h2>
+    <div class="column">
+        
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis possimus voluptate quos eius aut quaerat, aperiam asperiores aliquid soluta amet, laborum voluptates nulla quis explicabo tenetur accusamus molestiae est repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nihil dignissimos, dicta, modi, eius consequatur officiis perspiciatis reprehenderit provident iure aut autem placeat illum dolorum est distinctio. Nostrum, aliquid amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime voluptates eos dolorem natus doloribus odio ratione accusamus earum quae, cupiditate ab facere iste nobis quisquam? Repellendus id aliquid quisquam.
+       
+    </div>
+    <div class="center">
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
+    </div></div>
+</body>
+</html>
