@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,9 +37,6 @@ a{
     border-radius: 4px;
     color: black;
 }
-.body img{
-    width: 100%;
-}
 .body{
     position: relative;
 }
@@ -51,15 +51,117 @@ a{
     bottom: 4%;
     left: 14%;
 }
-.body-text{
-    float: left;
-}
 .body-form{
     position: absolute;
-    float: left;
-    right: 0px;
+    right: 14%;
     top: 0px;
-    width: 50px;
-    height: 100px;
+}
+.body-form-content{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.body-form-logo-wrapper img{
+    float: left;
+}
+.body-form-logo-wrapper p{
+    padding-left: 16px;
+    font-size: 2em;
+    color: white;
+    float: left;
+    line-height: 50%;
+}
+
+input[type=text], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.body-form-fields label{
+    color: white;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.download-guide{
+    width: 90%;
+    background-color: rgb(34, 34, 34);
+    padding: 32px;
+}
+.download-guide div{
+    color: white;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+
+}
+.download-guide img{
+    float: right;
+}
+.form-footer{
+    color: white;
+    text-align: center;
+    padding-right: 20px;
+}
+.about{
+    background-color: #5fa32e;
+    padding: 4% 14%;
+    width: 100%;
+    float: left;
+}
+.about-text{
+    font-size: 60px;
+    color: white;
+    float: left;
+}
+.about-form-logo-wrapper{
+    float: right;
+}
+
+.about-form-logo-wrapper img{
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+.about-form-logo-wrapper p{
+    padding-left: 16px;
+    font-size: 2em;
+    color: white;
+    float: left;
+    line-height: 5%;
+}
+.about-body-content{
+    width: 33.33%; 
+    padding-right: 60px;
+    float: left;
+    color: white;
+
+}
+.about-body-content-image{
+    height: 68px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+.about-body-heading{
+    font-weight: bold;
+    height: 80px;
+    font-size: 20px;
+
+}
+.about-body-text{
+    font-weight: 100;
+
+}
+.about-body{
+    padding: 24px 0px;
 }
 
