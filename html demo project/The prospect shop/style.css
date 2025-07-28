@@ -10,6 +10,9 @@ body{
     background-size: 100% 100%;
     padding: 2% 14%;
 }
+.header-right-mobile{
+    display: none;
+}
 
 a{
     text-decoration: none;
@@ -115,12 +118,12 @@ input[type=text], select {
     background-color: #5fa32e;
     padding: 4% 14%;
     width: 100%;
-    float: left;
 }
 .about-text{
-    font-size: 60px;
+    font-size: 56px;
     color: white;
     float: left;
+    font-weight: 50;
 }
 .about-form-logo-wrapper{
     float: right;
@@ -133,7 +136,7 @@ input[type=text], select {
 }
 .about-form-logo-wrapper p{
     padding-left: 16px;
-    font-size: 2em;
+    font-size: 40px;
     color: white;
     float: left;
     line-height: 5%;
@@ -148,20 +151,99 @@ input[type=text], select {
 .about-body-content-image{
     height: 68px;
     width: 100%;
+    padding-bottom: 20px;
     align-content: center;
     text-align: center;
 }
 .about-body-heading{
     font-weight: bold;
-    height: 80px;
+    padding-bottom: 20px;
     font-size: 20px;
-
 }
 .about-body-text{
     font-weight: 100;
-
+    padding-bottom: 8px;
 }
 .about-body{
     padding: 24px 0px;
 }
+.clients{
+    margin-top: 20px;
+    padding: 2% 14%;
+}
+.clients-header div{
+    float: left;
+    font-size: 40px;
+    color: #5fa32e;
+}
+.clients-header img{
+    float: right;
+}
+.client-details{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 60px;
+}
+.client-company{
+    color: #5fa32e;
+    font-weight: bold;
+}
+.client-name{
+    font-weight:normal;
+}
+.client-position{
+    font-weight:lighter;
+    padding-bottom: 16px;
+}
+.client-profile{
+    padding-bottom: 16px;
+}
+.client-review{
+    padding-bottom: 16px;
+}
+.all-clients{
+    padding: 28px 0px;
+}
 
+@media screen and (max-width:640px) {
+    .header {
+        padding: 4% 4%;
+        padding-top: 8%;
+    }
+    .about{
+        padding: 4% 4%;
+    }
+    .about-form-logo-wrapper p{
+        display: none;
+    }
+    .about-body-content{
+        width: 100%; 
+        padding-right: 0px;
+        padding: 0% 8%;
+        float: none;
+        padding-bottom: 40px;
+    }
+    .about-body-heading{
+        font-weight: bold;
+        padding-bottom: 8px;
+        font-size: 20px;
+    }
+    .header-left{
+        width: 75%;
+    }
+    .header-right-mobile{
+        width: 13%;
+        display: inline;
+        float: right;
+    }
+    .header-right{
+        display: none;
+    }
+    .about-body{
+        padding: 0px 0px;
+    }
+    .about-head{
+        padding-bottom: 20px;
+    }
+}
