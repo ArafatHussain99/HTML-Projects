@@ -42,22 +42,30 @@ a{
 }
 .body{
     position: relative;
+    background-image: url("images/body_bg.jpg");
+}
+.body-background-image{
+    width: 100%;
 }
 .body .body-large{
     position: absolute;
     top: 12%;
     left: 14%;
-    font-size: 300%;
+    font-size: 3vw;
 }
 .body .body-footer{
     position: absolute;
     bottom: 4%;
     left: 14%;
+    font-size: 1vw;
 }
 .body-form{
     position: absolute;
     right: 14%;
     top: 0px;
+}
+.body-form-bg{
+    width: 31vw;
 }
 .body-form-content{
     position: absolute;
@@ -113,6 +121,9 @@ input[type=text], select {
     color: white;
     text-align: center;
     padding-right: 20px;
+}
+.form-outside{
+    display: none;
 }
 .about{
     background-color: #5fa32e;
@@ -179,6 +190,9 @@ input[type=text], select {
 .clients-header img{
     float: right;
 }
+.clients-header-logo2{
+    display: none;
+}
 .client-details{
     width: 33.33%;
     float: left;
@@ -194,22 +208,85 @@ input[type=text], select {
 }
 .client-position{
     font-weight:lighter;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
 }
 .client-profile{
-    padding-bottom: 16px;
+    padding-bottom: 20px;
 }
 .client-review{
+    height: 160px;
     padding-bottom: 16px;
 }
 .all-clients{
     padding: 28px 0px;
 }
 
-@media screen and (max-width:640px) {
+.companies{
+    padding: 0% 14%;
+    padding-top: 2%;
+}
+.download-guide-container{
+    position: relative;
+    float: right;
+    width: 42%;
+}
+.grey-logos{
+    width: 58%;
+    float: left;
+    height: 220px;
+    align-content: center;
+}
+.grey-logo{
+    padding-right: 4%;
+}
+.guide{
+    position: absolute;
+    top: 50%;
+    font-size: 28px;
+    color: white;
+    padding-left: 16%;
+}
+.guide-logo{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    padding-right: 16%;
+}
+.footer{
+    background-image: url("images/footer.png");
+    background-size: 100% 100%;
+    padding: 4% 14%;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+@media screen and (max-width:1200px) {
     .header {
         padding: 4% 4%;
         padding-top: 8%;
+    }
+    .body-form{
+        display: none;
+    }
+    .body .body-large{
+        font-size: 160%;
+        font-weight: bolder;
+    }
+    .body .body-footer{
+        bottom: 1%;
+        left: 0%;
+        font-size: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    .form-outside{
+        width: 100%;
+        position: relative;
+        display:block;
+    }
+    .form-outside .body-form-bg{
+        width: 100%;
     }
     .about{
         padding: 4% 4%;
@@ -245,5 +322,56 @@ input[type=text], select {
     }
     .about-head{
         padding-bottom: 20px;
+    }
+    .client-details{
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0px 60px;
+    }
+    .client-review{
+        height: 140px;
+    }
+    .client-company-logo{
+        padding-bottom: 20px;
+    }
+    .clients{
+        padding: 4% 4%;
+    }
+    .clients-header div{
+        font-size: 56px;
+    }
+    .clients-header-logo{
+        display: none;
+    }
+    .clients-header-logo2{
+        display: inline-block;
+    }
+    .grey-logos{
+        display: inline-block;
+        float: none;
+        width: 100%;
+    }
+    .download-guide-container{
+        float: none;
+        width: 100%;
+    }
+    .footer{
+        text-align: center;
+    }
+    .companies{
+        padding: 0% 0%;
+    }
+    .grey-logo{
+        width: 23%;
+    }
+    .guide{
+        top: 55%;
+    }
+    .guide-logo{
+        top: 55%;
+    }
+    .background-alt{
+        width: 100%;
     }
 }
